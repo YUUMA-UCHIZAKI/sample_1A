@@ -4,7 +4,7 @@
  * 作成日  ：2025/04/01
  * 作成者  ：FLM Uzawa
  *------------------------------------------------------------------------------
- * 修正履歴 (修正日：担当者曽根本：修正内容)
+ * 修正履歴 (修正日：担当者：修正内容)
  *------------------------------------------------------------------------------
  */
 package sample.controller;
@@ -54,6 +54,12 @@ public class AddItemCompleteController extends HttpServlet {
 		item.setItemName(req.getParameter("item_name"));
 		item.setItemDescribe(req.getParameter("item_describe"));
 		item.setItemPrice(Integer.parseInt(req.getParameter("item_price")));
+//		item.setStatus(Integer.parseInt(req.getParameter("status")));
+		String preRegister = req.getParameter("pre_register");
+		int status = (preRegister != null) ? 0 : 1;
+		item.setStatus(status);
+//		return ;
+
 
 		try (Connection con = ConnectionManager.getConnection()){
 
