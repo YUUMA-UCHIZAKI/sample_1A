@@ -127,14 +127,14 @@ public class Item {
     /**
      * @return status
      */
-    public int getStatus() {
+    public int getItemStatus() {
         return status;
     }
 
     /**
      * @param status セットする status
      */
-    public void setStatus(int status) {
+    public void setItemStatus(int status) {
         this.status = status;
     }
 

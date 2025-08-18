@@ -62,6 +62,7 @@ public class ItemDao {
 				item.setItemName(rs.getString("item_name"));
 				item.setItemDescribe(rs.getString("item_describe"));
 				item.setItemPrice(rs.getInt("item_price"));
+				item.setItemStatus(rs.getInt("item_status"));
 			}
 		}
 
@@ -90,7 +91,7 @@ public class ItemDao {
 			stmt.setString(3, item.getItemName());
 			stmt.setString(4, item.getItemDescribe());
 			stmt.setInt(5, item.getItemPrice());
-			stmt.setInt(6, item.getStatus());
+			stmt.setInt(6, item.getItemStatus());
 			stmt.executeUpdate();
 
 		} catch (SQLException e) {
