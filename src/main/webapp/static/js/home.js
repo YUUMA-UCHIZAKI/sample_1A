@@ -84,6 +84,9 @@ function initItemDetail() {
 		document.querySelector("#item_name").textContent = selectedItem.itemName;
 		document.querySelector("#item_describe").textContent = selectedItem.itemDescribe;
 		document.querySelector("#item_price").textContent = selectedItem.itemPrice;
+		console.log(selectedItem);
+		console.log("aa");
+		console.log(selectedItem.itemStatus);
 		document.querySelector("#item_status").textContent=selectedItem.itemStatus;
 		// 商品詳細情報を表示・商品が存在しない場合のメッセージを非表示
 		document.querySelector("#item_detail_area").style.display = "block";
