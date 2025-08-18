@@ -57,7 +57,7 @@ public class AddItemCompleteController extends HttpServlet {
 //		item.setStatus(Integer.parseInt(req.getParameter("status")));
 		String preRegister = req.getParameter("pre_register");
 		int status = (preRegister != null) ? 0 : 1;
-		item.setStatus(status);
+		item.setItemStatus(status);
 //		return ;
 
 

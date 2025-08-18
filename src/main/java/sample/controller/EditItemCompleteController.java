@@ -55,7 +55,7 @@ public class EditItemCompleteController extends HttpServlet {
 		item.setItemName(req.getParameter("item_name"));
 		item.setItemDescribe(req.getParameter("item_describe"));
 		item.setItemPrice(Integer.parseInt(req.getParameter("item_price")));
-		item.setStatus(Integer.parseInt(req.getParameter("status")));
+		item.setItemStatus(Integer.parseInt(req.getParameter("status")));
 
 		try (Connection con = ConnectionManager.getConnection()){
 
