@@ -60,7 +60,7 @@
 						<!-- 仮登録（チェックされていたら value="0" が送信される） -->
 						<div class="mb-3">
 							<input type="checkbox" id="item_status_checkbox" name="status"
-								value="0"  checked/> 仮登録<label for="item_status_checkbox"></label>
+								value="1"  checked/> 仮登録<label for="item_status_checkbox"></label>
 
 						</div>
 					</div>
