@@ -59,7 +59,7 @@
 						<div class="mb-3">
 							<input type="checkbox" id="item_status" name="item_status" value="1"
 								${item.status == 1 ? "checked='checked'" : ""} /> <label
-								for="item_status">本登録</label>
+								for="item_status">仮登録</label>
 
 						</div>
 
