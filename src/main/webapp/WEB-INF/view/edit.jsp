@@ -62,14 +62,14 @@
 
 						<!-- 仮登録（チェックされていたら value="0" が送信される） -->
 						<div class="mb-3">
-							<input type="checkbox" id="item_price_checkbox" name="item_price"
+							<input type="checkbox" id="item_status_checkbox" name="item_status"
 								value== 0  /> <label
-								for="item_price_checkbox">仮登録</label>
+								for="item_status_checkbox">仮登録</label>
 
-						<div class="mb-3">
-							<input type="checkbox" id="item_status" name="item_status" value="1"
-								${item.status == 1 ? "checked='checked'" : ""} /> <label
-								for="item_status">仮登録</label>
+<!--						<div class="mb-3">-->
+<!--							<input type="checkbox" id="item_status" name="item_status" value="1"-->
+<!--								${item.status == 1 ? "checked='checked'" : ""} /> <label-->
+<!--								for="item_status">仮登録</label>-->
 
 						</div>
 
