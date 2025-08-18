@@ -63,9 +63,6 @@
 						<tr>
 							<th class="table-primary w-25">登録状態</th>
 							<td id="item_status">
-<!--							<c:out value="${sessionScope.item.status=='0' ? '仮登録':'本登録'}" />-->
-<!--							<td id="status">-->
-<!--							<c:out value="${sessionScope.item.status=='0' ? '仮登録':'本登録'}" />-->
 							</td>
 						</tr>
 					</table>
