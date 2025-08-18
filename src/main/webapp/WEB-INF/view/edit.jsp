@@ -72,15 +72,6 @@
 <!--								for="item_status">仮登録</label>-->
 
 						</div>
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
->>>>>>> branch 'master' of https://github.com/YUUMA-UCHIZAKI/sample_1A.git
 					</div>
 					<div class="d-md-flex justify-content-md-end">
 						<button id="item_edit" type="submit" class="btn btn-primary">商品編集</button>
