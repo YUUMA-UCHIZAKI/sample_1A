@@ -4,7 +4,7 @@
  * 作成日  ：2025/04/01
  * 作成者  ：FLM Uzawa
  *------------------------------------------------------------------------------
- * 修正履歴 (修正日：担当者：修正内容)
+ * 修正履歴 (修正日：担当者曽根本：修正内容)
  *------------------------------------------------------------------------------
  */
 package sample.controller;
@@ -44,30 +44,30 @@ public class AddItemCompleteController extends HttpServlet {
 	 */
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
+
 		req.setCharacterEncoding("UTF-8");
-		
+
 		String next = "/WEB-INF/view/home.jsp";
-		
+
 		Item item = new Item();
 		item.setShopId(Integer.parseInt(req.getParameter("shop_id")));
 		item.setItemName(req.getParameter("item_name"));
 		item.setItemDescribe(req.getParameter("item_describe"));
 		item.setItemPrice(Integer.parseInt(req.getParameter("item_price")));
-		
+
 		try (Connection con = ConnectionManager.getConnection()){
-			
+
 			ItemDao itemDao = new ItemDao(con);
 			int itemId = itemDao.insert(item);
-			
+
 			ShopDao dao = new ShopDao(con);
 			List<Shop> shopList = dao.selectAll();
 
 			ObjectMapper mapper = new ObjectMapper();
-			String shopListJson = mapper.writeValueAsString(shopList);	
+			String shopListJson = mapper.writeValueAsString(shopList);
 
 			req.setAttribute("shopList", shopListJson);
-			
+
 			req.setAttribute("selectedShopId", item.getShopId());
 			req.setAttribute("selectedItemId", itemId);
 
@@ -80,5 +80,5 @@ public class AddItemCompleteController extends HttpServlet {
 		rd.forward(req, resp);
 
 	}
-	
+
 }
