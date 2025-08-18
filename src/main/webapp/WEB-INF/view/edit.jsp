@@ -56,6 +56,7 @@
 								maxlength="10">
 						</div>
 
+
 						<!-- 本登録（デフォルト） -->
 						<input type="hidden" name="item_price" value="1" />
 
@@ -64,7 +65,15 @@
 							<input type="checkbox" id="item_price_checkbox" name="item_price"
 								value== 0  /> <label
 								for="item_price_checkbox">仮登録</label>
+
+						<div class="mb-3">
+							<input type="checkbox" id="item_status" name="item_status" value="1"
+								${item.status == 1 ? "checked='checked'" : ""} /> <label
+								for="item_status">仮登録</label>
+
 						</div>
+
+
 
 
 
@@ -79,6 +88,7 @@
 	</main>
 	<%-- 共通jsファイルの読み込み --%>
 	<jsp:include page="./include/jsfile.jsp" flush="true" />
+
 
 <!--	<div class="mb-3">-->
 <!--		<label class="form-label" for="item_id">ID：</label> <input type="text"-->
@@ -112,5 +122,6 @@
 <!--		<%-- 共通jsファイルの読み込み --%>-->
 <!--		<jsp:include page="./include/jsfile.jsp" flush="true" />-->
 	
+
 </body>
 </html>
