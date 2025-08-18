@@ -62,7 +62,7 @@ public class ItemDao {
 				item.setItemName(rs.getString("item_name"));
 				item.setItemDescribe(rs.getString("item_describe"));
 				item.setItemPrice(rs.getInt("item_price"));
-				item.setItemStatus(rs.getInt("item_status"));
+				item.setItemStatus(rs.getInt("status"));
 			}
 		}
 
