@@ -42,31 +42,29 @@
 						<div class="mb-3">
 							<label class="form-label" for="item_name">名称：</label> <input type="text"
 								class="form-control" id="item_name" name="item_name"
-								value="<c:out value="${item.itemName}" />" maxlength="20">
+								value="<c:out value="${item.itemName}" />" maxlength="20" required>
 						</div>
 						<div class="mb-3">
 							<label class="form-label" for="item_describe">説明：</label>
 							<textarea class="form-control" id="item_describe" name="item_describe"
-								maxlength="200"><c:out value="${item.itemDescribe}" /></textarea>
+								maxlength="200" required><c:out value="${item.itemDescribe}" /></textarea>
 						</div>
 						<div class="mb-3">
 							<label class="form-label" for="item_price">価格：</label> <input
 								type="number" class="form-control" id="item_price" name="item_price"
 								value="<c:out value="${item.itemPrice}" />" min="1" max="9999999999"
-								maxlength="10">
+								maxlength="10" required>
 						</div>
 						<div class="mb-3">
 							<input type="checkbox" id="item_status" name="item_status" value="1"
 								${item.status == 1 ? "checked='checked'" : ""} /> <label
 								for="item_status">仮登録</label>
 						</div>
-
 					</div>
 					<div class="d-md-flex justify-content-md-end">
 						<button id="item_edit" type="submit" class="btn btn-primary">商品編集</button>
 					</div>
 				</div>
-				<div>
 		</form>
 	</main>
 	<%-- 共通jsファイルの読み込み --%>
