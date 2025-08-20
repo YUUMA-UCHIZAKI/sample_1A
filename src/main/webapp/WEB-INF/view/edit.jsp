@@ -56,11 +56,11 @@
 								maxlength="10" required>
 						</div>
 						<!-- 本登録（デフォルト） -->
-						<input type="hidden" name="item_price" value="1" />
+						<input type="hidden" name="status" value="1" id ="hidden"/>
 						<!-- 仮登録（チェックされていたら value="0" が送信される） -->
 						<div class="mb-3">
 							<input type="checkbox" id="item_status_checkbox" name="status"
-								value="0"  checked/> 仮登録<label for="item_status_checkbox"></label>
+								value="0" checked onchange="updateCheckboxValue()" /> 仮登録<label for="item_status_checkbox"></label>
 
 						</div>
 					</div>
@@ -72,5 +72,6 @@
 	</main>
 	<%-- 共通jsファイルの読み込み --%>
 	<jsp:include page="./include/jsfile.jsp" flush="true" />
+	<script src="./static/js/edit.js"></script>
 </body>
 </html>

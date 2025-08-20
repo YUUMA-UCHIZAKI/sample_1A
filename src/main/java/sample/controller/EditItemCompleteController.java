@@ -12,6 +12,7 @@ package sample.controller;
 import static sample.model.constant.SystemConsts.*;
 
 import java.io.IOException;
+import java.security.Principal;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
@@ -50,6 +51,7 @@ public class EditItemCompleteController extends HttpServlet {
 		String next = "/WEB-INF/view/home.jsp";
 
 		Item item = new Item();
+		System.out.print(req.getParameter("status"));
 		item.setShopId(Integer.parseInt(req.getParameter("shop_id")));
 		item.setItemId(Integer.parseInt(req.getParameter("item_id")));
 		item.setItemName(req.getParameter("item_name"));
