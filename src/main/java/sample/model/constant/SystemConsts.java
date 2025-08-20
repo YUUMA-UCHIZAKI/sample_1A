@@ -17,13 +17,11 @@ public interface SystemConsts {
 	/**
 	 * JDBC URL
 	 */
-    /**
+
 	String JDBC_URL =
 			"jdbc:mysql://rds-037-naoyasonemoto.cz30ispolc7o.ap-northeast-1.rds.amazonaws.com:3306/sampledb"+"?useSSL=false&allowPublicKeyRetrieval=true";
-			*/
-	String JDBC_URL =
-    "jdbc:mysql://localhost:3306/sampledb"
-    + "?useSSL=false&allowPublicKeyRetrieval=true";
+//	"jdbc:mysql://localhost:3306/sampledb"
+//    + "?useSSL=false&allowPublicKeyRetrieval=true";
 
 	/**
 	 * DBユーザ
