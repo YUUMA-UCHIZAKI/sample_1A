@@ -5,4 +5,4 @@
 /bin/
 /build/
 **/bin/*
-SystemConst.java
+SystemConsts.java
