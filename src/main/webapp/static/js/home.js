@@ -75,21 +75,9 @@ function updateCheckboxValue() {
 	var hidden=document.getElementById("hidden");
 	hidden.value=checkbox.checked ? "0":"1";
         }
-
-//window.onload = () => {
-//	alert("a");
-//			var checkbox = document.getElementById("item_status_checkbox");
-//		checkbox.value=0;
-//	}
 	
 
-	document.addEventListener('DOMContentLoaded', () => {
-		alert("b")
-	  const checkbox = document.getElementById('myCheckbox');
-	  if (checkbox && checkbox.checked) {
-	    console.log('初期状態でチェックされています');
-	  }
-	});
+
 // 商品詳細の初期化
 function initItemDetail() {
 

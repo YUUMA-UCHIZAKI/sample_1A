@@ -54,10 +54,10 @@ public class AddItemCompleteController extends HttpServlet {
 		item.setItemName(req.getParameter("item_name"));
 		item.setItemDescribe(req.getParameter("item_describe"));
 		item.setItemPrice(Integer.parseInt(req.getParameter("item_price")));
-//		item.setStatus(Integer.parseInt(req.getParameter("status")));
-		String preRegister = req.getParameter("pre_register");
-		int status = (preRegister != null) ? 0 : 1;
-		item.setItemStatus(status);
+		item.setItemStatus(Integer.parseInt(req.getParameter("status")));
+//		String preRegister = req.getParameter("pre_register");
+//		int status = (preRegister != null) ? 0 : 1;
+//		item.setItemStatus(status);
 //		return ;
 
 

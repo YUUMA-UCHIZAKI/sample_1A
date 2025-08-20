@@ -19,7 +19,6 @@ function updateCheckboxValue() {
         }
 
 window.onload = () => {
-	alert("a");
 			var checkbox = document.getElementById("item_status_checkbox");
 			var hidden=document.getElementById("hidden");
 			hidden.value=checkbox.checked ? "0":"1";

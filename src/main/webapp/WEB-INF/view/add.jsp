@@ -47,12 +47,15 @@
 								min="1" max="9999999999" maxlength="10">
 						</div>
 						<div>
-							<div class="mb-3">
-								<form action="AddItemCompleteController" method="post">
-									<label>仮登録：<input type="checkbox" name="status" value="0">
-										</label><br> 
-								</form>
-							</div>
+													<!-- 仮登録（チェックされていたら value="0" が送信される） -->
+												<!-- 本登録（デフォルト） -->
+						<input type="hidden" name="status" value="1" id ="hidden"/>
+						<div class="mb-3">
+							<input type="checkbox" id="item_status_checkbox" name="status"
+								value="0" checked onchange="updateCheckboxValue()" /> 仮登録
+								<label for="item_status_checkbox">
+								</label>
+						</div>
 						</div>
 						<div class="d-md-flex justify-content-md-end">
 							<button id="item_edit" type="submit" class="btn btn-primary">商品追加</button>
@@ -63,5 +66,6 @@
 	</main>
 	<%-- 共通jsファイルの読み込み --%>
 	<jsp:include page="./include/jsfile.jsp" flush="true" />
+	<script src="./static/js/edit.js"></script>
 </body>
 </html>
