@@ -60,7 +60,11 @@
 						<!-- 仮登録（チェックされていたら value="0" が送信される） -->
 						<div class="mb-3">
 							<input type="checkbox" id="item_status_checkbox" name="status"
+<<<<<<< HEAD
 								value="0" checked onchange="updateCheckboxValue()" /> 仮登録<label for="item_status_checkbox"></label>
+=======
+								value="1"  checked/> 仮登録<label for="item_status_checkbox"></label>
+>>>>>>> branch 'master' of https://github.com/YUUMA-UCHIZAKI/sample_1A.git
 
 						</div>
 					</div>
